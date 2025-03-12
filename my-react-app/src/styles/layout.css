@@ -1,0 +1,160 @@
+/* ==========================================================================
+   FILE: layout.css
+   PURPOSE: Layout containers, header, footer, sidebars, etc.
+========================================================================== */
+
+/* ---------------------------
+   1) HEADER & LOGO
+---------------------------- */
+.header {
+    background: #101A30;
+    color: var(--background);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .logo-img {
+    height: 80px;
+    max-width: 150px;
+    object-fit: contain;
+  }
+  
+  .login-logo {
+    width: 100px;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 0;
+  }
+  
+  /* ---------------------------
+     2) CONTENT WRAPPER
+  ---------------------------- */
+  .content-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 110px);
+    margin-top: 120px; /* accounts for fixed header height */
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  .content-box {
+    background: var(--background);
+    border-radius: 60px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  /* ---------------------------
+     3) FOOTER & ORANGE BAR
+  ---------------------------- */
+  .footer-bar {
+    background-color: #101A30;
+    color: #fff;
+    display: flex;
+    padding: 20px 0;
+    width: 100vw;
+  }
+  
+  .footer-logo {
+    filter: brightness(0) invert(1);
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .footer-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  
+  .orange-bar {
+    background-color: #E65D34;
+    height: 10px;
+    width: 100%;
+  }
+  
+  /* ---------------------------
+     4) OFFCANVAS SIDEBAR
+  ---------------------------- */
+  .offcanvas-custom {
+    background-color: #101A30;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .offcanvas-body {
+    flex-grow: 1;
+  }
+  
+  .offcanvas-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .offcanvas-custom .sidebar-link,
+  .offcanvas-custom .offcanvas-title {
+    font-family: 'Montserrat', serif;
+    text-transform: uppercase;
+    color: inherit;
+  }
+  
+  .offcanvas-custom .sidebar-link {
+    font-weight: 600;
+  }
+  
+  .offcanvas-custom .offcanvas-title {
+    font-weight: 700;
+  }
+  
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link,
+  .nav-pills .nav-link:hover,
+  .nav-pills .nav-link:focus {
+    background-color: #E65D34;
+    color: #fff;
+  }
+  
+  /* ---------------------------
+     5) USER INFO / LOGOUT BUTTON
+  ---------------------------- */
+  .user-email {
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    word-break: break-word;
+  }
+  
+  #logout-btn {
+    width: 100%;
+  }
+  

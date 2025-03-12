@@ -1,0 +1,40 @@
+/* ==========================================================================
+   FILE: responsive.css
+   PURPOSE: Responsive media queries
+========================================================================== */
+
+/* ---------------------------
+   1) RESPONSIVE .content-box
+---------------------------- */
+@media (max-width: 768px) {
+    .content-box {
+      max-width: 90%;
+      padding: 30px;
+    }
+  }
+  
+  /* ---------------------------
+     2) SEARCH RESULTS LAYOUT
+  ---------------------------- */
+  @media (max-width: 768px) {
+    .search-results-list .list-group-item {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* ---------------------------
+     3) FORM DETAILS RESPONSIVE
+  ---------------------------- */
+  @media (min-width: 768px) {
+    #formDetails {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #formDetails {
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+  

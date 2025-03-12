@@ -1,0 +1,72 @@
+/* ==========================================================================
+   FILE: base.css
+   PURPOSE: Global variables, fonts, basic resets
+========================================================================== */
+
+/* ---------------------------
+   1) COLOR PALETTE
+---------------------------- */
+:root {
+    --font-color: #101A30;
+    --accent-color: #F74F22;
+    --submit-color: #fdb800;
+    --bright-yellow: #fdb800;
+    --background: #F8F9FA;
+  }
+  
+  /* ---------------------------
+     2) GLOBAL RESETS
+  ---------------------------- */
+  html,
+  body {
+    background: var(--background);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ---------------------------
+     3) HEADINGS
+  ---------------------------- */
+  h1,
+  h2,
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--font-color);
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    font-size: 17px;
+    color: var(--font-color);
+  }
+  
+  /* ---------------------------
+     4) TEXT SELECTION
+  ---------------------------- */
+  ::selection {
+    background-color: var(--accent-color);
+    color: var(--font-color);
+  }
+  
+  ::-moz-selection {
+    background-color: var(--bright-yellow);
+    color: #060F20;
+  }
